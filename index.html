@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Garden Upgrade | West Cork</title>
+  <meta name="description" content="The Garden Upgrade delivers garden transformations across West Cork. One point of contact, trusted local gardeners." />
+
+  <style>
+    :root {
+      --green: #2f5d50;
+      --dark: #1f3e36;
+      --light: #f5f7f6;
+      --accent: #e6efe9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #2c2c2c;
+      line-height: 1.6;
+      background: var(--light);
+    }
+
+    h1, h2 {
+      color: var(--green);
+      line-height: 1.3;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(rgba(47,93,80,0.9), rgba(47,93,80,0.9)),
+                  url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: white;
+      color: var(--green);
+      padding: 0.9rem 1.75rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1.75rem;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .two-col {
+      display: grid;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+    }
+
+    .local {
+      background: var(--accent);
+      text-align: center;
+      padding: 2rem;
+      border-radius: 6px;
+    }
+
+    form label {
+      font-weight: 600;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.4rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--green);
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cfe1da;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Garden Upgrade</h1>
+  <p>Garden transformations across West Cork. From tired outdoor spaces to beautiful, practical gardens — managed end to end.</p>
+  #quoteGet a Free Garden Quote</a>
+</header>
+
+<section>
+  <h2>From Tired Gardens to Upgraded Spaces</h2>
+  <div class="card two-col">
+    <div>
+      <p><strong>Before</strong></p>
+      <p>Overgrown, uneven, underused outdoor space.</p>
+    </div>
+    <div>
+      <p><strong>After</strong></p>
+      <p>Clean, structured garden ready to enjoy year‑round.</p>
+    </div>
+  </div>
+  <p style="font-size: 0.95rem;">📸 Real project photos will be added here as upgrades are completed.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="card">
+    <ol>
+      <li>You tell us about your garden and what you’d like to change</li>
+      <li>We plan the upgrade and scope the work</li>
+      <li>Skilled local gardeners carry out the work</li>
+      <li>You enjoy your upgraded outdoor space</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>What We Upgrade</h2>
+  <div class="card">
+    <ul>
+      <li>Overgrown or neglected gardens</li>
+      <li>Lawn replacement or levelling</li>
+      <li>Raised beds and planting schemes</li>
+      <li>Patios, paths and hard landscaping</li>
+      <li>Gardens prepared for property sale</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="local">
+    <h2>West Cork Based</h2>
+    <p>
+      The Garden Upgrade is proudly based in West Cork, working with experienced,
+      vetted local gardeners. You deal with one point of contact from start to finish.
+    </p>
+  </div>
+</section>
+
+<section id="quote">
+  <h2>Request a Garden Upgrade Quote</h2>
+  <div class="card">
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Your name" />
+
+      <label>Location (Town / Townland)</label>
+      <input type="text" placeholder="e.g. Clonakilty" />
+
+      <label>Tell us about your garden</label>
+      <textarea rows="5" placeholder="What would you like to change or upgrade?"></textarea>
+
+      <label>Email or Phone</label>
+      <input type="text" placeholder="How should we contact you?" />
+
+      <button type="submit">Request My Garden Upgrade</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 The Garden Upgrade · West Cork, Ireland
+</footer>
+
+</body>
+</html>
