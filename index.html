@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Garden Upgrade | West Cork</title>
-  <meta name="description" content="The Garden Upgrade provides garden transformations across West Cork. Managed end to end using trusted local gardeners.">
+  <meta name="description" content="The Garden Upgrade provides managed garden transformations across West Cork using trusted local gardeners.">
 
   <style>
     :root {
@@ -14,9 +14,7 @@
       --accent: #e6efe9;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -31,13 +29,10 @@
       line-height: 1.3;
     }
 
-    a {
-      text-decoration: none;
-    }
+    a { text-decoration: none; }
 
-    /* HERO */
     header {
-      position: relative; /* ✅ important */
+      position: relative;
       background:
         linear-gradient(rgba(47,93,80,0.95), rgba(47,93,80,0.95)),
         url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
@@ -60,7 +55,6 @@
       margin: 0 auto 1.5rem;
     }
 
-    /* ✅ CTA FIXED AND CLICKABLE */
     .cta {
       display: inline-block;
       background: #ffffff;
@@ -69,7 +63,7 @@
       border-radius: 4px;
       font-weight: 600;
       position: relative;
-      z-index: 2; /* ✅ ensures button is above overlay */
+      z-index: 2;
       cursor: pointer;
     }
 
@@ -97,14 +91,10 @@
     }
 
     @media (min-width: 768px) {
-      .two-col {
-        grid-template-columns: 1fr 1fr;
-      }
+      .two-col { grid-template-columns: 1fr 1fr; }
     }
 
-    ul, ol {
-      padding-left: 1.2rem;
-    }
+    ul, ol { padding-left: 1.2rem; }
 
     .local {
       background: var(--accent);
@@ -159,7 +149,6 @@
       beautiful, practical gardens — managed end to end.
     </p>
 
-    <!-- ✅ VALID, CLICKABLE CTA -->
     <a href="#quote" class="cta">Get a Free Garden Quote</a>
   </header>
 
@@ -175,17 +164,16 @@
         <p>Clean, structured garden ready to enjoy year‑round.</p>
       </div>
     </div>
-    <p style="font-size: 0.95rem;">📸 Real project photos will be added here as upgrades are completed.</p>
   </section>
 
   <section>
     <h2>How It Works</h2>
     <div class="card">
       <ol>
-        <li>You tell us about your garden and what you’d like to change</li>
-        <li>We plan the upgrade and scope the work</li>
+        <li>You tell us about your garden</li>
+        <li>We plan the upgrade</li>
         <li>Skilled local gardeners carry out the work</li>
-        <li>You enjoy your upgraded outdoor space</li>
+        <li>You enjoy your upgraded space</li>
       </ol>
     </div>
   </section>
@@ -195,11 +183,15 @@
     <div class="card">
       <ul>
         <li>Overgrown or neglected gardens</li>
-        <li>Lawn replacement or levelling</li>
-        <li>Raised beds and planting schemes</li>
+        <li>Raised beds and planting</li>
         <li>Patios, paths and hard landscaping</li>
-        <li>Gardens prepared for property sale</li>
+        <li>Gardens prepared for sale</li>
       </ul>
+
+      <p style="margin-top: 1rem; font-style: italic;">
+        We focus on <strong>managed garden upgrades</strong> — coordinating the right
+        skills for each job, rather than full garden rebuilds.
+      </p>
     </div>
   </section>
 
@@ -207,8 +199,7 @@
     <div class="local">
       <h2>West Cork Based</h2>
       <p>
-        The Garden Upgrade is proudly based in West Cork, working with experienced,
-        vetted local gardeners. You deal with one point of contact from start to finish.
+        Working with trusted local gardeners. One point of contact from start to finish.
       </p>
     </div>
   </section>
@@ -216,21 +207,26 @@
   <section id="quote">
     <h2>Request a Garden Upgrade Quote</h2>
     <div class="card">
-      <form> https://formspree.io/f/mgorepkn
+
+      <form action="https://formspree.io/f/mgorepkn" method="POST">
+
         <label>Name</label>
-        <input type="text" placeholder="Your name">
+        <input type="text" name="name" placeholder="Your name" required>
 
         <label>Location (Town / Townland)</label>
-        <input type="text" placeholder="e.g. Clonakilty">
+        <input type="text" name="location" placeholder="e.g. Clonakilty" required>
 
         <label>Tell us about your garden</label>
-        <textarea rows="5" placeholder="What would you like to change or upgrade?"></textarea>
+        <textarea name="message" rows="5" placeholder="What would you like to change or upgrade?" required></textarea>
 
         <label>Email or Phone</label>
-        <input type="text" placeholder="How should we contact you?">
+        <input type="text" name="contact" placeholder="How should we contact you?" required>
+
+        <input type="hidden" name="_subject" value="New Garden Upgrade Enquiry">
 
         <button type="submit">Request My Garden Upgrade</button>
       </form>
+
     </div>
   </section>
 
