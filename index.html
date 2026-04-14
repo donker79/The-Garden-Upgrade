@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Garden Upgrade | West Cork</title>
-  <meta name="description" content="The Garden Upgrade provides managed garden transformations across West Cork using trusted local gardeners.">
+  <meta name="description" content="The Garden Upgrade provides managed garden upgrades across West Cork using trusted local gardeners.">
 
   <style>
     :root {
@@ -24,7 +24,7 @@
       background: var(--light);
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: var(--green);
       line-height: 1.3;
     }
@@ -85,13 +85,27 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
-    .two-col {
+    .availability {
+      background: var(--accent);
+      border-left: 5px solid var(--green);
+      padding: 1.25rem 1.5rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+    }
+
+    .pricing-grid {
       display: grid;
       gap: 2rem;
     }
 
     @media (min-width: 768px) {
-      .two-col { grid-template-columns: 1fr 1fr; }
+      .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     ul, ol { padding-left: 1.2rem; }
@@ -150,56 +164,84 @@
     </p>
 
     <a href="#quote" class="cta">Get a Free Garden Quote</a>
+
+    <div class="availability">
+      <strong>Limited availability</strong><br>
+      We take on a small number of garden upgrades at a time so each project gets proper attention.
+      If you’re thinking about an upgrade, now is a good time to get in touch.
+    </div>
   </header>
 
   <section>
     <h2>From Tired Gardens to Upgraded Spaces</h2>
-    <div class="card two-col">
-      <div>
-        <p><strong>Before</strong></p>
-        <p>Overgrown, uneven, underused outdoor space.</p>
-      </div>
-      <div>
-        <p><strong>After</strong></p>
-        <p>Clean, structured garden ready to enjoy year‑round.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>How It Works</h2>
     <div class="card">
-      <ol>
-        <li>You tell us about your garden</li>
-        <li>We plan the upgrade</li>
-        <li>Skilled local gardeners carry out the work</li>
-        <li>You enjoy your upgraded space</li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <h2>What We Upgrade</h2>
-    <div class="card">
-      <ul>
-        <li>Overgrown or neglected gardens</li>
-        <li>Raised beds and planting</li>
-        <li>Patios, paths and hard landscaping</li>
-        <li>Gardens prepared for sale</li>
-      </ul>
-
-      <p style="margin-top: 1rem; font-style: italic;">
-        We focus on <strong>managed garden upgrades</strong> — coordinating the right
-        skills for each job, rather than full garden rebuilds.
+      <p>
+        We help homeowners refresh and upgrade their gardens without the stress of coordinating
+        multiple trades. You deal with one point of contact — we take care of the rest.
       </p>
     </div>
+  </section>
+
+  <section>
+    <h2>Typical Garden Upgrade Projects</h2>
+    <p>
+      Every garden is different, but the examples below give a sense of the type and scale of
+      projects we manage.
+    </p>
+
+    <div class="pricing-grid">
+      <div class="card">
+        <h3>🌱 Garden Refresh</h3>
+        <p>
+          Ideal for smaller upgrades that quickly improve the look and usability of your garden.
+        </p>
+        <ul>
+          <li>Clear‑outs and tidy‑ups</li>
+          <li>Re‑shaping beds and borders</li>
+          <li>New planting and mulching</li>
+        </ul>
+        <p><strong>Typical starting range: €500 – €1,200</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>🌿 Garden Upgrade</h3>
+        <p>
+          Our most common type of project — a managed upgrade that delivers a noticeable transformation.
+        </p>
+        <ul>
+          <li>Full garden clear‑out and re‑layout</li>
+          <li>Raised beds and planting schemes</li>
+          <li>Paths, patios or defined outdoor areas</li>
+        </ul>
+        <p><strong>Typical range: €1,500 – €4,000</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>🌳 Full Garden Transformation</h3>
+        <p>
+          For larger or more involved upgrades requiring careful coordination of multiple skills.
+        </p>
+        <ul>
+          <li>Complete garden redesign</li>
+          <li>Hard landscaping with planting</li>
+          <li>Multi‑stage managed works</li>
+        </ul>
+        <p><strong>Projects from €4,000+</strong></p>
+      </div>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-style: italic;">
+      We focus on <strong>managed garden upgrades</strong> — coordinating trusted local gardeners
+      and trades rather than full garden rebuilds.
+    </p>
   </section>
 
   <section>
     <div class="local">
       <h2>West Cork Based</h2>
       <p>
-        Working with trusted local gardeners. One point of contact from start to finish.
+        Proudly serving West Cork and working with experienced local gardeners.
+        One point of contact from start to finish.
       </p>
     </div>
   </section>
@@ -209,7 +251,6 @@
     <div class="card">
 
       <form action="https://formspree.io/f/mgorepkn" method="POST">
-
         <label>Name</label>
         <input type="text" name="name" placeholder="Your name" required>
 
@@ -236,4 +277,3 @@
 
 </body>
 </html>
-``
