@@ -51,7 +51,7 @@
 
     header p {
       font-size: 1.2rem;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 1.5rem;
     }
 
@@ -71,7 +71,6 @@
       background: var(--accent);
     }
 
-    /* ✅ READABLE AVAILABILITY BOX */
     .availability {
       background: #ffffff;
       border-left: 5px solid var(--green);
@@ -110,7 +109,7 @@
       }
     }
 
-    ul, ol { padding-left: 1.2rem; }
+    ul { padding-left: 1.2rem; }
 
     .local {
       background: var(--accent);
@@ -123,6 +122,26 @@
       font-weight: 600;
       display: block;
       margin-top: 1rem;
+    }
+
+    form small {
+      display: block;
+      margin-top: 0.4rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .whatsapp-box {
+      background: var(--accent);
+      border-radius: 6px;
+      padding: 1rem;
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    .whatsapp-box a {
+      color: var(--green);
+      font-weight: 600;
     }
 
     form input,
@@ -161,16 +180,16 @@
   <header>
     <h1>The Garden Upgrade</h1>
     <p>
-      Garden transformations in Bandon and surrounding areas.
-      From tired outdoor spaces to beautiful, practical gardens — managed end to end.
+      <strong>Transform your garden without the hassle</strong> — Bandon and surrounding areas.<br>
+      Managed garden upgrades from tired outdoor spaces to beautiful, practical gardens.
     </p>
 
-    <a href="#quote" class="cta">Get a Free Garden Quote</a>
+    <a href="#quote" class="cta">Get Your Garden Upgrade Quote</a>
 
     <div class="availability">
       <strong>Limited availability</strong><br>
       We take on a small number of garden upgrades at a time so each project gets proper attention.
-      If you’re thinking about an upgrade, now is a good time to get in touch.
+      If you’re considering an upgrade, feel free to get in touch — there’s no obligation.
     </div>
   </header>
 
@@ -178,18 +197,14 @@
     <h2>From Tired Gardens to Upgraded Spaces</h2>
     <div class="card">
       <p>
-        We help homeowners refresh and upgrade their gardens without the stress of coordinating
-        multiple trades. You deal with one point of contact — we take care of the rest.
+        We help homeowners improve their gardens without the stress of coordinating multiple trades.
+        You deal with one point of contact — we manage planning, scheduling, and delivery.
       </p>
     </div>
   </section>
 
   <section>
     <h2>Typical Garden Upgrade Projects</h2>
-    <p>
-      Every garden is different, but the examples below give a sense of the type and scale of
-      projects we manage.
-    </p>
 
     <div class="pricing-grid">
       <div class="card">
@@ -222,18 +237,13 @@
         <p><strong>Projects from €4,000+</strong></p>
       </div>
     </div>
-
-    <p style="margin-top: 1.5rem; font-style: italic;">
-      We focus on <strong>managed garden upgrades</strong> — coordinating trusted local gardeners
-      and trades rather than full garden rebuilds.
-    </p>
   </section>
 
   <section>
     <div class="local">
       <h2>Bandon & Surrounding Areas</h2>
       <p>
-        Based in Bandon and serving the surrounding areas, working with experienced local gardeners.
+        Based in Bandon and serving the surrounding areas.
         One point of contact from start to finish.
       </p>
     </div>
@@ -251,10 +261,18 @@
         <input type="text" name="location" placeholder="e.g. Bandon" required>
 
         <label>Tell us about your garden</label>
-        <textarea name="message" rows="5" placeholder="What would you like to change or upgrade?" required></textarea>
+        <textarea name="message" rows="5" placeholder="What would you like to change or improve?" required></textarea>
 
         <label>Email or Phone</label>
         <input type="text" name="contact" placeholder="How should we contact you?" required>
+
+        <div class="whatsapp-box">
+          <strong>Sharing photos?</strong><br>
+          Once we receive your request, you can send photos of your garden on WhatsApp:<br>
+          <a href="https://wa.me/353876418352" target="_blank">
+            Send photos on WhatsApp (087&nbsp;641&nbsp;8352)
+          </a>
+        </div>
 
         <input type="hidden" name="_subject" value="New Garden Upgrade Enquiry">
 
