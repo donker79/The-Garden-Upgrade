@@ -3,300 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Garden Upgrade | Bandon</title>
-  <meta name="description" content="Transform your garden without the hassle. Managed garden upgrades in Bandon and surrounding areas.">
+  <title>Garden Upgrades</title>
 
   <style>
-    :root {
-      --green: #2f5d50;
-      --dark: #1f3e36;
-      --light: #f5f7f6;
-      --accent: #e6efe9;
+    * {
+      box-sizing: border-box;
     }
-
-    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--light);
-      color: #2c2c2c;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
     }
 
-    h1, h2, h3 { color: var(--green); }
-
-    a { text-decoration: none; }
-
-    header {
-      background:
-        linear-gradient(rgba(47,93,80,0.95), rgba(47,93,80,0.95)),
-        url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
-
-    header h1 { color: #fff; }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 720px;
-      margin: 0 auto 1.5rem;
-    }
-
-    .cta {
-      display: inline-block;
-      background: #fff;
-      color: var(--green);
-      padding: 0.9rem 1.75rem;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-
-    .cta:hover { background: var(--accent); }
-
-    .availability {
-      background: #fff;
-      border-left: 5px solid var(--green);
-      padding: 1.5rem;
-      border-radius: 6px;
-      margin: 2rem auto 0;
-      max-width: 800px;
-      color: var(--dark);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
+    .container {
+      max-width: 900px;
       margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
     }
 
     .card {
-      background: #fff;
-      padding: 1.75rem;
-      border-radius: 6px;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
     }
 
-    /* Before / After */
-    .before-after-grid {
-      display: grid;
-      gap: 2rem;
+    .image-block {
+      margin-bottom: 25px;
     }
 
+    .image-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .label {
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .before {
+      background: #ffe600;
+      color: #000;
+    }
+
+    .after {
+      background: #4caf50;
+      color: #fff;
+    }
+
+    /* Desktop layout */
     @media (min-width: 768px) {
-      .before-after-grid {
-        grid-template-columns: 1fr 1fr;
+      .card {
+        display: flex;
+        gap: 20px;
       }
-    }
 
-    .before-after-grid img {
-      width: 100%;
-      border-radius: 6px;
-    }
-
-    .caption {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
-      text-align: center;
-    }
-
-    .local {
-      background: var(--accent);
-      text-align: center;
-      padding: 2rem;
-      border-radius: 6px;
-    }
-
-    form label {
-      font-weight: 600;
-      display: block;
-      margin-top: 1rem;
-    }
-
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.4rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    form small {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .whatsapp-box {
-      background: var(--accent);
-      padding: 1rem;
-      border-radius: 6px;
-      margin-top: 1.2rem;
-    }
-
-    .whatsapp-box a {
-      color: var(--green);
-      font-weight: 600;
-    }
-
-    form button {
-      background: var(--green);
-      color: white;
-      border: none;
-      padding: 0.9rem;
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    footer {
-      background: var(--dark);
-      color: #cfe1da;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
+      .image-block {
+        flex: 1;
+        margin-bottom: 0;
+      }
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>The Garden Upgrade</h1>
-  <p>
-    <strong>Transform your garden without the hassle</strong> — Bandon and surrounding areas.<br>
-    Managed garden upgrades from tired outdoor spaces to beautiful, practical gardens.
-  </p>
+  <section class="container">
+    <h1>Garden Upgrades</h1>
+    <p>A selection of garden spaces before and after managed upgrade works.</p>
 
-  <a href="#quote" class="cta">Get Your Garden Upgrade Quote</a>
-
-  <div class="availability">
-    <strong>Limited availability</strong><br>
-    We take on a small number of garden upgrades at a time so each project gets proper attention.
-  </div>
-</header>
-
-<section>
-  <h2>Before & After: Recent Garden Upgrades</h2>
-  <p>A selection of garden spaces before and after managed upgrade works.</p>
-
-  <!-- Project 1 -->
-  <div class="card">
-    <div class="before-after-grid">
-      <div>
-        <img src="images/project1-before.jpg" alt="Garden before upgrade">
-        <p class="caption"><strong>Before:</strong> Garden space before managed upgrade works.</p>
+    <div class="card">
+      <div class="image-block">
+        <img src="images/before.jpg" alt="Garden before upgrade" loading="lazy">
+        <p><span class="label before">Before:</span> Garden space before managed upgrade works.</p>
       </div>
-      <div>
-        <img src="images/project1-after.jpg" alt="Garden after upgrade">
-        <p class="caption"><strong>After:</strong> Same space following a complete garden upgrade.</p>
+
+      <div class="image-block">
+        <img src="images/after.jpg" alt="Garden after upgrade" loading="lazy">
+        <p><span class="label after">After:</span> Same space following a complete garden upgrade.</p>
       </div>
     </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="card">
-    <div class="before-after-grid">
-      <div>
-        <img src="images/project2-before.jpg" alt="Garden before upgrade">
-        <p class="caption"><strong>Before:</strong> Garden space before managed upgrade works.</p>
-      </div>
-      <div>
-        <img src="images/project2-after.jpg" alt="Garden after upgrade">
-        <p class="caption"><strong>After:</strong> Same space following a complete garden upgrade.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="card">
-    <div class="before-after-grid">
-      <div>
-        <img src="images/project3-before.jpg" alt="Garden before upgrade">
-        <p class="caption"><strong>Before:</strong> Garden space before managed upgrade works.</p>
-      </div>
-      <div>
-        <img src="images/project3-after.jpg" alt="Garden after upgrade">
-        <p class="caption"><strong>After:</strong> Same space following a complete garden upgrade.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4 -->
-  <div class="card">
-    <div class="before-after-grid">
-      <div>
-        <img src="images/project4-before.jpg" alt="Garden before upgrade">
-        <p class="caption"><strong>Before:</strong> Garden space before managed upgrade works.</p>
-      </div>
-      <div>
-        <img src="images/project4-after.jpg" alt="Garden after upgrade">
-        <p class="caption"><strong>After:</strong> Same space following a complete garden upgrade.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="local">
-  <h2>Bandon & Surrounding Areas</h2>
-  <p>One point of contact from start to finish.</p>
-</section>
-
-<section id="quote">
-  <h2>Request a Garden Upgrade Quote</h2>
-  <div class="card">
-
-    <form action="https://formspree.io/f/mgorepkn" method="POST">
-
-      <label>Name</label>
-      <input type="text" name="name" required>
-
-      <label>Location (Town / Townland)</label>
-      <input type="text" name="location" required>
-
-      <label>Eircode (optional)</label>
-      <input type="text" name="eircode">
-
-      <label>Tell us about your garden</label>
-      <textarea name="message" rows="5" required></textarea>
-
-      <label>Email address</label>
-      <input type="email" name="email" required>
-
-      <label>Phone number</label>
-      <input type="tel" name="phone">
-
-      <div class="whatsapp-box">
-        <strong>Sharing photos?</strong><br>
-        After submitting the form, you can send photos on WhatsApp:
-        <br>
-        <a href="https://wa.me/353876418352" target="_blank">
-          Send photos on WhatsApp (087 641 8352)
-        </a>
-      </div>
-
-      <input type="hidden" name="_subject" value="New Garden Upgrade Enquiry">
-
-      <button type="submit">Request My Garden Upgrade</button>
-    </form>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 The Garden Upgrade · Bandon, Ireland
-</footer>
+  </section>
 
 </body>
 </html>
