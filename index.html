@@ -24,7 +24,7 @@
       line-height: 1.6;
     }
 
-    h1, h2, h3 { color: var(--green); }
+    h1, h2 { color: var(--green); }
 
     a { text-decoration: none; }
 
@@ -55,8 +55,6 @@
       border-radius: 4px;
       font-weight: 600;
     }
-
-    .cta:hover { background: var(--accent); }
 
     .availability {
       background: #fff;
@@ -106,13 +104,6 @@
       font-size: 1rem;
     }
 
-    form small {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
     .whatsapp-box {
       background: var(--accent);
       padding: 1rem;
@@ -155,7 +146,7 @@
     Managed garden upgrades from tired outdoor spaces to beautiful, practical gardens.
   </p>
 
-  #quoteGet Your Garden Upgrade Quote</a>
+  <a href="#quote" class="cta">Get Your Garden Upgrade Quote</a>
 
   <div class="availability">
     <strong>Limited availability</strong><br>
@@ -169,22 +160,16 @@
   <div class="card">
     <p>
       Each garden upgrade is fully managed from the first conversation through to completion.
-      We handle the planning, coordination, and delivery so you can enjoy the transformation
-      without the usual stress.
+      Planning, coordination, and delivery are handled for you.
     </p>
 
     <ul>
       <li>Clear planning and realistic timelines</li>
-      <li>Removal of tired or overgrown garden areas</li>
-      <li>Practical layouts that suit how you use your space</li>
-      <li>Durable materials chosen for long‑term use</li>
-      <li>One point of contact from start to finish</li>
+      <li>Removal of tired or overgrown areas</li>
+      <li>Practical layouts for everyday use</li>
+      <li>Durable materials chosen to last</li>
+      <li>One point of contact throughout</li>
     </ul>
-
-    <p>
-      Examples of completed garden upgrades are available on request and shared
-      based on projects similar to your space and needs.
-    </p>
   </div>
 </section>
 
@@ -197,7 +182,7 @@
   <h2>Request a Garden Upgrade Quote</h2>
 
   <div class="card">
-    https://formspree.io/f/mgorepkn
+    <form action="https://formspree.io/f/mgorepkn" method="POST">
 
       <label>Name</label>
       <input type="text" name="name" required>
@@ -220,7 +205,7 @@
       <div class="whatsapp-box">
         <strong>Sharing photos?</strong><br>
         After submitting the form, you can send photos on WhatsApp:<br>
-        https://wa.me/353876418352
+        <a href="https://wa.me/353876418352" target="_blank">
           Send photos on WhatsApp (087 641 8352)
         </a>
       </div>
@@ -238,3 +223,4 @@
 
 </body>
 </html>
+``
