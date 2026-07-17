@@ -1,334 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Garden Upgrade | Personalised Garden Plans for Irish Homes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Receive a personalised Garden Upgrade Plan tailored to your location, garden conditions, style preferences and budget. Delivered online anywhere in Ireland.">
+<title>The Garden Upgrade | Personalised Garden Plans for Irish Homes</title>
 
-  <style>
-    :root {
-      --green: #2f5d50;
-      --dark: #1f3e36;
-      --light: #f5f7f6;
-      --accent: #e6efe9;
-    }
+<meta name="description" content="Receive a personalised Garden Upgrade Plan tailored to your location, style, budget and garden conditions. Available anywhere in Ireland.">
 
-    * {
-      box-sizing: border-box;
-    }
+<style>
+:root {
+  --green: #2f5d50;
+  --dark: #1f3e36;
+  --light: #f5f7f6;
+  --accent: #e6efe9;
+}
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--light);
-      color: #2c2c2c;
-      line-height: 1.6;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    h1, h2 {
-      color: var(--green);
-    }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--light);
+  color: #2c2c2c;
+  line-height: 1.6;
+}
 
-    a {
-      text-decoration: none;
-    }
+h1, h2, h3 {
+  color: var(--green);
+}
 
-    header {
-      background:
-        linear-gradient(rgba(47,93,80,0.92), rgba(47,93,80,0.92)),
-        url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6);
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 5rem 1.5rem;
-      text-align: center;
-    }
+a {
+  text-decoration: none;
+}
 
-    header h1 {
-      color: white;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+header {
+  background:
+    linear-gradient(rgba(47,93,80,0.92), rgba(47,93,80,0.92)),
+    url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
 
-    header p {
-      max-width: 760px;
-      margin: auto;
-      font-size: 1.2rem;
-    }
+header h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
 
-    .cta {
-      display: inline-block;
-      background: white;
-      color: var(--green);
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 2rem;
-    }
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 4rem 1.5rem;
-    }
+.hero-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+}
 
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
-    }
+.hero-benefits {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: left;
+  display: inline-block;
+}
 
-    .price-box {
-      background: var(--accent);
-      border-radius: 8px;
-      text-align: center;
-      padding: 2rem;
-    }
+.cta {
+  display: inline-block;
+  background: white;
+  color: var(--green);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
-    .price {
-      font-size: 3rem;
-      font-weight: bold;
-      color: var(--green);
-    }
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
 
-    form label {
-      font-weight: 600;
-      display: block;
-      margin-top: 1rem;
-    }
+.price-box {
+  background: var(--accent);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
 
-    form input,
-    form select,
-    form textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin-top: 0.4rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--green);
+}
 
-    form button {
-      background: var(--green);
-      color: white;
-      border: none;
-      padding: 1rem;
-      margin-top: 1.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-      font-size: 1rem;
-    }
+ul {
+  padding-left: 20px;
+}
 
-    .faq {
-      margin-bottom: 1.5rem;
-    }
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
 
-    footer {
-      background: var(--dark);
-      color: #cfe1da;
-      text-align: center;
-      padding: 2rem;
-    }
-  </style>
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+footer {
+  background: var(--dark);
+  color: #cfe1da;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
 
-  <h1>The Garden Upgrade</h1>
+<h1>The Garden Upgrade</h1>
 
-  <p>
-    <strong>Personalised Garden Plans for Irish Homes</strong><br><br>
+<div class="subtitle">
+Personalised Garden Plans for Irish Homes
+</div>
 
-    Upload photos of your garden and receive a customised garden plan tailored to your location, garden conditions, style preferences and budget.
-    <br><br>
-    No site visits. No contractor sourcing. Delivered online anywhere in Ireland.
-  </p>
+<div class="hero-text">
+Upload photos of your garden and receive a customised garden plan tailored to your location, garden conditions, style preferences and budget.
 
-  #planGet My Garden Plan</a>
+<br><br>
+
+No site visits. No contractor sourcing. Delivered online anywhere in Ireland.
+</div>
+
+<div class="hero-benefits">
+✓ Personalised Garden Assessment<br>
+✓ AI Visual Concepts<br>
+✓ Plant Recommendations<br>
+✓ Shopping List & Implementation Roadmap<br>
+✓ Tailored To Irish Gardens
+</div>
+
+<br>
+
+" class="cta">
+Get My Garden Plan
+</a>
 
 </header>
 
 <section>
 
-  <h2>How It Works</h2>
+<h2>How It Works</h2>
 
-  <div class="card">
+<div class="card">
 
-    <h3>1. Upload Photos</h3>
-    <p>Share photos of your garden and tell us what you'd like to improve.</p>
+<h3>1. Upload Photos</h3>
+<p>Share photos of your garden and tell us what you'd like to improve.</p>
 
-    <h3>2. Tell Us About Your Garden</h3>
-    <p>Provide your Eircode, garden size, preferred style and budget.</p>
+<h3>2. Tell Us About Your Garden</h3>
+<p>Provide your Eircode, garden size, preferred style and budget.</p>
 
-    <h3>3. Receive Your Garden Upgrade Plan</h3>
-    <p>Get a personalised digital garden plan delivered directly to your inbox.</p>
+<h3>3. Receive Your Garden Upgrade Plan</h3>
+<p>Get your personalised digital garden plan delivered directly to your inbox.</p>
 
-  </div>
-
-</section>
-
-<section>
-
-  <h2>What's Included?</h2>
-
-  <div class="card">
-
-    <ul>
-      <li>Personalised Garden Assessment</li>
-      <li>Eircode-Based Site Analysis</li>
-      <li>Garden Concept & Design Direction</li>
-      <li>AI-Generated Visual Concepts</li>
-      <li>Plant Recommendations for Irish Conditions</li>
-      <li>Planting Suggestions</li>
-      <li>Shopping List</li>
-      <li>Seasonal Interest Guidance</li>
-      <li>Step-by-Step Implementation Roadmap</li>
-      <li>Professional PDF Report</li>
-    </ul>
-
-  </div>
+</div>
 
 </section>
 
 <section>
 
-  <h2>Designed For Irish Gardens</h2>
+<div class="price-box">
 
-  <div class="card">
+<h2>Garden Upgrade Plan</h2>
 
-    <p>
-      Whether you're in Cork, Dublin, Galway, Limerick, Waterford or anywhere in between,
-      The Garden Upgrade creates personalised plans tailored to your garden's unique location and conditions.
-    </p>
+<div class="price">€149</div>
 
-    <p>
-      Using your Eircode, photos and preferences, we create practical recommendations to help transform your outdoor space.
-    </p>
+<p>
+A personalised digital garden plan designed specifically for your property.
+</p>
 
-  </div>
+<p>
+Delivered within 5 working days.
+</p>
 
-</section>
-
-<section id="plan">
-
-  <div class="price-box">
-
-    <h2>Garden Upgrade Plan</h2>
-
-    <div class="price">€149</div>
-
-    <p>
-      A personalised digital garden plan designed specifically for your property.
-    </p>
-
-    <p>
-      Delivered as a professional PDF within 5 working days.
-    </p>
-
-  </div>
+</div>
 
 </section>
 
 <section>
 
-  <h2>Frequently Asked Questions</h2>
+<h2>What's Included?</h2>
 
-  <div class="faq">
-    <strong>Do you visit my property?</strong><br>
-    No. Everything is completed remotely using the information you provide.
-  </div>
+<div class="card">
 
-  <div class="faq">
-    <strong>Is this available outside Cork?</strong><br>
-    Yes. The Garden Upgrade is available anywhere in Ireland.
-  </div>
+<ul>
+<li>Personalised Garden Assessment</li>
+<li>Eircode-Based Site Analysis</li>
+<li>Garden Concept & Design Direction</li>
+<li>AI Visual Concepts</li>
+<li>Plant Recommendations Suitable For Irish Conditions</li>
+<li>Planting Suggestions</li>
+<li>Shopping List</li>
+<li>Seasonal Interest Guidance</li>
+<li>Step-By-Step Implementation Roadmap</li>
+<li>Professional PDF Report</li>
+</ul>
 
-  <div class="faq">
-    <strong>Can I complete the work myself?</strong><br>
-    Absolutely. Many customers use the plan as a DIY roadmap.
-  </div>
-
-  <div class="faq">
-    <strong>Do I have to use a recommended contractor?</strong><br>
-    No. You're free to use any gardener or contractor you choose.
-  </div>
+</div>
 
 </section>
 
-<section id="quote">
+<section>
 
-  <h2>Start Your Garden Upgrade</h2>
+<h2>Designed For Irish Gardens</h2>
 
-  <div class="card">
+<div class="card">
 
-    kn" method="POST">
+<p>
+Whether you're in Cork, Dublin, Galway, Limerick, Waterford or anywhere in between, your Garden Upgrade Plan is tailored to your garden and local conditions.
+</p>
 
-      <label>Name</label>
-      <input type="text" name="name" required>
+<p>
+Using your Eircode, photos and preferences, we create practical recommendations to help transform your outdoor space.
+</p>
 
-      <label>Email Address</label>
-      <input type="email" name="email" required>
-
-      <label>Eircode</label>
-      <input type="text" name="eircode" required>
-
-      <label>Approximate Garden Size</label>
-      <select name="garden-size">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
-
-      <label>Preferred Garden Style</label>
-      <select name="style">
-        <option>Contemporary</option>
-        <option>Cottage Garden</option>
-        <option>Wildlife Friendly</option>
-        <option>Low Maintenance</option>
-        <option>Family Garden</option>
-      </select>
-
-      <label>Budget Range</label>
-      <select name="budget">
-        <option>Under €1,000</option>
-        <option>€1,000 - €3,000</option>
-        <option>€3,000 - €7,500</option>
-        <option>€7,500+</option>
-      </select>
-
-      <label>What would you like to improve?</label>
-      <textarea name="improvements" rows="5"></textarea>
-
-      <label>Anything you'd like to keep?</label>
-      <textarea name="keep" rows="3"></textarea>
-
-      <input type="hidden" name="_subject" value="New Garden Upgrade Plan Enquiry">
-
-      <button type="submit">
-        Request My Garden Upgrade Plan
-      </button>
-
-    </form>
-
-  </div>
+</div>
 
 </section>
 
-<footer>
-  © 2026 The Garden Upgrade<br>
-  Personalised Garden Plans for Irish Homes
-</footer>
+<section>
 
-</body>
-</html>
+<h2>Frequently Asked Questions</h2>
+
+<div class="card">
+
+<p><strong>Do you visit my property?</strong><br>
+No. Everything is completed remotely using the information you provide.</p>
+
+<p><
