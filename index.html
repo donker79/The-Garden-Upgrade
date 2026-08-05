@@ -266,10 +266,18 @@
     .ba-label.before .dot { background: #c9925f; }
     .ba-label.after .dot { background: var(--green); }
     .ba-slider { position: relative; max-width: 700px; margin: 0 auto; aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
-    .ba-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: baFade 6s infinite; }
+    .ba-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: baFade 20s infinite; }
     .ba-slider img:nth-child(1) { animation-delay: 0s; }
-    .ba-slider img:nth-child(2) { animation-delay: 3s; }
-    @keyframes baFade { 0% { opacity: 0; } 10% { opacity: 1; } 40% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+    .ba-slider img:nth-child(2) { animation-delay: 2s; }
+    .ba-slider img:nth-child(3) { animation-delay: 4s; }
+    .ba-slider img:nth-child(4) { animation-delay: 6s; }
+    .ba-slider img:nth-child(5) { animation-delay: 8s; }
+    .ba-slider img:nth-child(6) { animation-delay: 10s; }
+    .ba-slider img:nth-child(7) { animation-delay: 12s; }
+    .ba-slider img:nth-child(8) { animation-delay: 14s; }
+    .ba-slider img:nth-child(9) { animation-delay: 16s; }
+    .ba-slider img:nth-child(10) { animation-delay: 18s; }
+    @keyframes baFade { 0% { opacity: 0; } 5% { opacity: 1; } 13% { opacity: 1; } 18% { opacity: 0; } 100% { opacity: 0; } }
     .video-links { display: flex; gap: 16px; flex-wrap: wrap; }
     .video-btn {
       display: inline-flex;
@@ -563,12 +571,25 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Watch The Transformation</h2>
-          <p class="section-lead">A quick before and after transition from one of our real garden upgrades.</p>
+          <p class="section-lead">A quick slideshow of five real garden upgrades, or watch the full videos below.</p>
         </div>
         <div class="ba-slider">
-          <img src="images/before-1.jpg" alt="Before the upgrade">
-          <img src="images/after-1.jpg" alt="After the upgrade">
+          <img src="images/before-1.jpg" alt="Before garden upgrade 1">
+          <img src="images/after-1.jpg" alt="After garden upgrade 1">
+          <img src="images/before-2.jpg" alt="Before garden upgrade 2">
+          <img src="images/after-2.jpg" alt="After garden upgrade 2">
+          <img src="images/before-3.jpg" alt="Before garden upgrade 3">
+          <img src="images/after-3.jpg" alt="After garden upgrade 3">
+          <img src="images/before-4.jpg" alt="Before garden upgrade 4">
+          <img src="images/after-4.jpg" alt="After garden upgrade 4">
+          <img src="images/before-5.jpg" alt="Before garden upgrade 5">
+          <img src="images/after-5.jpg" alt="After garden upgrade 5">
         </div>
+        <div class="video-links" style="justify-content: center; margin-top: 32px;">
+          <a class="video-btn" href="https://youtu.be/A2PtRVBRmoA" target="_blank">Watch Before Video</a>
+          <a class="video-btn" href="https://youtube.com/shorts/rafoh7so2BA?feature=share" target="_blank">Watch After Video</a>
+        </div>
+        <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 12px;">Tip: open the YouTube player and use the settings wheel to speed up playback.</p>
       </div>
     </section>
 
