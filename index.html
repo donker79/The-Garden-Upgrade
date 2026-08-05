@@ -265,6 +265,11 @@
     .ba-label .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .ba-label.before .dot { background: #c9925f; }
     .ba-label.after .dot { background: var(--green); }
+    .ba-slider { position: relative; max-width: 700px; margin: 0 auto; aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-md); }
+    .ba-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: baFade 6s infinite; }
+    .ba-slider img:nth-child(1) { animation-delay: 0s; }
+    .ba-slider img:nth-child(2) { animation-delay: 3s; }
+    @keyframes baFade { 0% { opacity: 0; } 10% { opacity: 1; } 40% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
     .video-links { display: flex; gap: 16px; flex-wrap: wrap; }
     .video-btn {
       display: inline-flex;
@@ -558,11 +563,11 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Watch The Transformation</h2>
-          <p class="section-lead">See the before and after videos of a real garden upgrade.</p>
+          <p class="section-lead">A quick before and after transition from one of our real garden upgrades.</p>
         </div>
-        <div class="video-links">
-          <a class="video-btn" href="https://youtu.be/A2PtRVBRmoA" target="_blank">Watch Before Video</a>
-          <a class="video-btn" href="https://youtube.com/shorts/rafoh7so2BA?feature=share" target="_blank">Watch After Video</a>
+        <div class="ba-slider">
+          <img src="images/before-1.jpg" alt="Before the upgrade">
+          <img src="images/after-1.jpg" alt="After the upgrade">
         </div>
       </div>
     </section>
